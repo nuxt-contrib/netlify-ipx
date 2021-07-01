@@ -6,7 +6,7 @@ import { resolve } from 'path'
 export default {
   async onPreBuild({ constants }) {
     console.log('netlify-plugin-ipx')
-    await fsp.writeFile(resolve(constants.FUNCTIONS_SRC, 'ipx.ts'), `
+    await fsp.writeFile(resolve(constants.PUBLISH_DIR, '.netlify/functions/ipx.ts'), `
       import { createIPXHandler } from 'netlify-plugin-ipx'
       export const handler = createIPXHandler({
         domains: ['images.unsplash.com']
