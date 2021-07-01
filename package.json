@@ -21,6 +21,7 @@
   "scripts": {
     "build": "siroc build",
     "prepublish": "yarn build",
+    "prepare": "yarn build",
     "dev": "netlify dev -d example/public -f example/functons"
   },
   "dependencies": {
