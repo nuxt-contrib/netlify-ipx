@@ -4205,9 +4205,9 @@ ip@^1.1.5:
   integrity sha1-vd7XARQpCCjAoDnnLvJfWq7ENUo=
 
 ipx@^0.6.4:
-  version "0.6.4"
-  resolved "https://registry.yarnpkg.com/ipx/-/ipx-0.6.4.tgz#df6757ab2c3ef717879d8d06accbfb156ba623e1"
-  integrity sha512-t1DvrB5tA52eSuGWNzxs2uJGsbcmTRP9Bv89OQk7xjOO/2UU1i7zniRXrL3pxg853UhvgXPHzwlTgqxejI99pA==
+  version "0.6.6"
+  resolved "https://registry.yarnpkg.com/ipx/-/ipx-0.6.6.tgz#f558e36d740321bdd635ed65e7fffb27415abc36"
+  integrity sha512-rSMAkB7oL59MA+PFN/XGxMvy7eYzITKOVZf9Yfsr79Y8kNbmcJj0/3nox5ZODo1DFRgdPWJrUzSn7ijpRnf7cA==
   dependencies:
     consola "^2.15.3"
     defu "^5.0.0"
