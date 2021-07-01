@@ -13,6 +13,7 @@
       "require": "./dist/plugin.cjs"
     }
   },
+  "types": "./dist/function.d.ts",
   "files": [
     "dist",
     "manifest.yml"
