@@ -2,7 +2,7 @@
 
 > on-demand image optimazation for Netlify using [ipx](https://github.com/unjs/ipx).
 
-✨ Online demo: https://netlify-ipx.netlify.app
+😺 Online demo: https://netlify-ipx.netlify.app
 
 ## Usage
 
@@ -26,6 +26,15 @@ export const handler = createIPXHandler({
 })
 ```
 
+Now you can use IPX to optimize both local and remote assets ✨
+
+Resize `/test.jpg` (in `dist`):
+
+<img src="/.netlify/functions/ipx/w_200/static/test.jpg"/>
+
+Resize and change format for a remote url:
+
+<img src="/.netlify/functions/ipx/f_webp,w_450/https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba"/>
 
 ## Local development
 
@@ -33,3 +42,7 @@ export const handler = createIPXHandler({
 - Install dependencies with `yarn install`
 - Install netlify development server with `yarn dev`
 - Open http://localhost:8888
+
+## License
+
+MIT
