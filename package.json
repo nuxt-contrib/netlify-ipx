@@ -1,6 +1,6 @@
 {
   "name": "netlify-plugin-ipx",
-  "version": "0.0.0-9",
+  "version": "0.0.0-10",
   "description": "on-demand image optimazation for Netlify",
   "license": "MIT",
   "exports": {
@@ -25,7 +25,8 @@
   },
   "dependencies": {
     "@netlify/functions": "^0.7.2",
-    "ipx": "^0.7.0"
+    "ipx": "^0.7.0",
+    "mkdirp": "^1.0.4"
   },
   "devDependencies": {
     "jiti": "^1.10.1",
