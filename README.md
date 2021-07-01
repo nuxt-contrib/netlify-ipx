@@ -16,9 +16,9 @@ npm i -D netlify-plugin-ipx
 yarn add --dev netlify-plugin-ipx
 ```
 
-Create `netlify/functions/ipx.js`:
+Create `netlify/functions/ipx.ts`:
 
-```js
+```ts
 import { createIPXHandler } from 'netlify-plugin-ipx/function'
 
 export const handler = createIPXHandler({
