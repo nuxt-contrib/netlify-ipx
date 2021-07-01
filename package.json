@@ -1,10 +1,34 @@
 {
-  "private": true,
-  "scripts": {
-    "dev": "npx netlify dev"
+  "name": "netlify-plugin-ipx",
+  "version": "0.0.0-3",
+  "description": "on-demand image optimazation for Netlify",
+  "license": "MIT",
+  "exports": {
+    "./": {
+      "import": "./dist/function.mjs",
+      "require": "./dist/function.cjs"
+    },
+    "./plugin": {
+      "import": "./dist/plugin.mjs",
+      "require": "./dist/plugin.cjs"
+    }
   },
-  "devDependencies": {
+  "files": [
+    "dist",
+    "manifest.yml"
+  ],
+  "scripts": {
+    "build": "siroc build",
+    "prepublish": "yarn build",
+    "dev": "netlify dev -d example/public -f example/functons"
+  },
+  "dependencies": {
     "@netlify/functions": "^0.7.2",
     "ipx": "^0.7.0"
+  },
+  "devDependencies": {
+    "jiti": "^1.10.1",
+    "netlify-cli": "^4.0.5",
+    "siroc": "^0.11.1"
   }
 }
