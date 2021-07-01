@@ -1,7 +1,7 @@
 [build]
   publish = "public/"
 
-[[plugins]]
-package = "netlify-plugin-ipx"
-  [plugins.inputs]
-  domains = ['images.unsplash.com']
+# [[plugins]]
+# package = "netlify-plugin-ipx"
+#  [plugins.inputs]
+#  domains = ['images.unsplash.com']

@@ -4,6 +4,29 @@
 
 ✨ Online demo: https://netlify-ipx.netlify.app
 
+## Usage
+
+Add `netlify-plugin-ipx` as devDependency:
+
+```sh
+# npm
+npm i -D netlify-plugin-ipx
+
+# yarn
+yarn add --dev netlify-plugin-ipx
+```
+
+Create `netlify/functions/ipx.js`:
+
+```js
+import { createIPXHandler } from 'netlify-plugin-ipx/function'
+
+export const handler = createIPXHandler({
+  domains: ['images.unsplash.com']
+})
+```
+
+
 ## Local development
 
 - Clone repository
