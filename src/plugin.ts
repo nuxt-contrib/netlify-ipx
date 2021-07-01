@@ -7,7 +7,7 @@ import mkdirp from 'mkdirp'
 export default {
   async onPreBuild({ constants }) {
     console.log('netlify-plugin-ipx')
-    const fnFile = resolve(constants.PUBLISH_DIR, '.netlify/functions/ipx.ts')
+    const fnFile = resolve(constants.FUNCTIONS_SRC, 'ipx.ts')
     await mkdirp(dirname(fnFile))
     await fsp.writeFile(fnFile, `
       import { createIPXHandler } from 'netlify-plugin-ipx'
