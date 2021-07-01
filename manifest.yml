@@ -1,0 +1,7 @@
+# https://docs.netlify.com/configure-builds/build-plugins/create-plugins
+name: netlify-plugin-ipx
+inputs:
+  - name: domains
+    description: Allowed external domains
+    required: false
+    default: []

@@ -1,0 +1,44 @@
+{
+  "name": "netlify-plugin-ipx",
+  "version": "0.0.1",
+  "description": "on-demand image optimazation for Netlify",
+  "repository": "nuxt-contrib/netlify-ipx",
+  "license": "MIT",
+  "exports": {
+    "./function": {
+      "import": "./dist/function.mjs",
+      "require": "./dist/function.cjs"
+    },
+    ".": {
+      "import": "./dist/plugin.mjs",
+      "require": "./dist/plugin.cjs"
+    }
+  },
+  "main": "./dist/plugin.cjs",
+  "files": [
+    "dist",
+    "manifest.yml"
+  ],
+  "scripts": {
+    "build": "siroc build",
+    "prepack": "yarn build",
+    "lint": "yarn eslint --ext .ts,.js,.mjs src",
+    "test": "yarn lint",
+    "release": "yarn test && standard-version && git push --follow-tags && npm publish",
+    "dev": "cd example && netlify dev"
+  },
+  "dependencies": {
+    "@netlify/functions": "^0.7.2",
+    "ipx": "^0.7.0",
+    "mkdirp": "^1.0.4"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config-typescript": "^6.0.1",
+    "eslint": "^7.29.0",
+    "jiti": "^1.10.1",
+    "netlify-cli": "^4.0.5",
+    "netlify-plugin-ipx": "link:.",
+    "siroc": "^0.11.1",
+    "standard-version": "^9.3.0"
+  }
+}
