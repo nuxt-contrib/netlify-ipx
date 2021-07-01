@@ -1,7 +1,7 @@
 import { createIPX, handleRequest } from 'ipx'
 import { builder } from '@netlify/functions'
 
-export function createIPXHandler(opts = {}) {
+export function createIPXHandler (opts = {}) {
   const ipx = createIPX({ ...opts })
 
   const handler = async (event, _context) => {
@@ -11,7 +11,7 @@ export function createIPXHandler(opts = {}) {
 
     const [modifiers = '_', ...segments] = url.substr(1).split('/')
     let id = segments.join('/')
-    let isLocal = !id.startsWith('http')
+    const isLocal = !id.startsWith('http')
     if (isLocal) {
       id = `${protocol}://${host}/${id}`
     }
