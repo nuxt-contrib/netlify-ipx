@@ -21,7 +21,7 @@
   "scripts": {
     "build": "siroc build",
     "prepack": "yarn build",
-    "dev": "netlify dev -d example/public -f example/functons"
+    "dev": "cd example && netlify dev"
   },
   "dependencies": {
     "@netlify/functions": "^0.7.2",
