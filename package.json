@@ -38,6 +38,7 @@
     "jiti": "^1.10.1",
     "netlify-cli": "^4.0.5",
     "netlify-plugin-ipx": "link:.",
-    "siroc": "^0.11.1"
+    "siroc": "^0.11.1",
+    "standard-version": "^9.3.0"
   }
 }
