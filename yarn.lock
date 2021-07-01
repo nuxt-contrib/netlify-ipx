@@ -6139,6 +6139,10 @@ netlify-cli@^4.0.5:
     wrap-ansi "^7.0.0"
     write-file-atomic "^3.0.0"
 
+"netlify-plugin-ipx@link:.":
+  version "0.0.0"
+  uid ""
+
 netlify-redirect-parser@^8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/netlify-redirect-parser/-/netlify-redirect-parser-8.0.0.tgz#9a58051c3c3c40843f50b7268ad0b6de90f56298"

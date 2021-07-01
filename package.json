@@ -20,7 +20,6 @@
   "scripts": {
     "build": "siroc build",
     "prepublish": "yarn build",
-    "selflink": "yarn link && yarn link netlify-plugin-ipx",
     "dev": "netlify dev -d example/public -f example/functons"
   },
   "dependencies": {
@@ -30,6 +29,7 @@
   "devDependencies": {
     "jiti": "^1.10.1",
     "netlify-cli": "^4.0.5",
+    "netlify-plugin-ipx": "link:.",
     "siroc": "^0.11.1"
   }
 }
