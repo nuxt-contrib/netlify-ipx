@@ -4,7 +4,7 @@ import { resolve } from 'path'
 // https://docs.netlify.com/configure-builds/build-plugins/create-plugins/
 
 export default {
-  async onPrebuild({ constants }) {
+  async onPreBuild({ constants }) {
     console.log('netlify-plugin-ipx')
     await fsp.writeFile(resolve(constants.FUNCTIONS_SRC, 'ipx.ts'), `
       import { createIPXHandler } from 'netlify-plugin-ipx'
