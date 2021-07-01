@@ -1,4 +1,5 @@
 const { createIPX, handleRequest } = require('ipx')
+const { builder } =  require('@netlify/functions')
 
 const ipx = createIPX({
   domains: [
@@ -6,7 +7,7 @@ const ipx = createIPX({
   ]
 })
 
-exports.handler = async (event, _context) => {
+exports.handler = builder(async (event, _context) => {
   const host = event.headers.host
   const protocol = event.headers['x-forwarded-proto'] || 'http'
   const url = event.path.replace('/.netlify/functions/ipx', '').replace(/index\.htm$/, '')
@@ -33,4 +34,4 @@ exports.handler = async (event, _context) => {
     isBase64Encoded: typeof res.body !== 'string',
     body: typeof res.body === 'string' ? res.body : res.body.toString('base64')
   }
-}
+})

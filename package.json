@@ -4,6 +4,7 @@
     "dev": "npx netlify dev"
   },
   "devDependencies": {
+    "@netlify/functions": "^0.7.2",
     "ipx": "^0.7.0"
   }
 }
