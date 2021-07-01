@@ -10,7 +10,7 @@ export default {
     const fnFile = resolve(constants.FUNCTIONS_SRC, 'ipx.ts')
     await mkdirp(dirname(fnFile))
     await fsp.writeFile(fnFile, `
-      import { createIPXHandler } from 'netlify-plugin-ipx'
+      import { createIPXHandler } from 'netlify-plugin-ipx/function'
       export const handler = createIPXHandler({
         domains: ['images.unsplash.com']
       })
